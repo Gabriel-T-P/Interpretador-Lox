@@ -5,6 +5,7 @@ import com.eng.Expr.Call;
 import com.eng.Expr.Get;
 import com.eng.Expr.Logical;
 import com.eng.Expr.Set;
+import com.eng.Expr.Super;
 import com.eng.Expr.This;
 import com.eng.Expr.Variable;
 
@@ -89,5 +90,11 @@ class AstPrinter implements Expr.Visitor<String> {
   public String visitVariableExpr(Variable expr) {
     // TODO Auto-generated method stub
     throw new UnsupportedOperationException("Unimplemented method 'visitVariableExpr'");
+  }
+
+  @Override
+  public String visitSuperExpr(Super expr) {
+    // TODO Auto-generated method stub
+    throw new UnsupportedOperationException("Unimplemented method 'visitSuperExpr'");
   }
 }
